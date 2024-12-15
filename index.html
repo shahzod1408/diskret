@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Diskret tuzilmalar</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__content">
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        
+                        Agar A=ROST, B=YOG'ON, C=ROST, D=YOLG'ON va E=ROST bo'lsa, u holda
+                        ( B AND NOT A OR (C AND NOT D))AND E mantiqiy ifodaning qiymatini aniqlang
+                    </p>
+
+                    <h2 class="header__title">
+                        Yolg'on
+                    </h2>
+
+                </div>
+
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=ROST,B=ROST, C=ROST D=YOLG'ON va E=YOLG'ON bo'lsa, u holda
+                        (B AND NOT A )OR C AND NOT D mantiqiy ifodaning qiymatini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        ROST
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=YOLG'ON,B=ROST,C=ROST,D=ROST va E=YOLG'ON bo'lsa, u holda
+                        B AND NOT A OR E OR C AND NOT D mantiqiy ifodaning qiymatini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        ROST
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Agar A=YOLG'ON,B=ROST,C=ROST,D=YOLG'ON va E=YOLG'ON bo'lsa, u holda
+                        (B AND (NOT A OR C)AND NOT D)OR E mantiqiy ifodaning qiymatini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        ROST
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Quyidagi butun sonlardan NOT(X>49) AND (X-juft son)=ROST tenglikni qanoatlandiradiganlarini
+                        aniqlang:
+                        2,50,49,123,45,16,15,42,66
+                    </p>
+
+                    <h2 class="header__title">
+                        2,16,42
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi butun sonlardan NOT(X>49) AND NOT(x < 9 )=ROST tenglikni qanoatlandiradiganlarini
+                            aniqlang: 2,50,49,123,45,16,15,42,66 </p>
+
+                            <h2 class="header__title">
+                                49,45,16,15,42
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi butun sonlardan NOT(X>49) AND NOT(x < 9 )=YOLG'ON tenglikni qanoatlandiradiganlarini
+                            aniqlang: 2,50,49,123,45,16,15,42,66 </p>
+
+                            <h2 class="header__title">
+                                2,50,123,66
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Quyida har biriga harf mos qo'yilgan mulohazalar berilgan.To'g'ri mulohazalarga mos harflar
+                        guruhini aniqlang.
+                        A= "Yolg'on mulohazaga ta'sir etganda rost mulohaza va rost mulohazaga ta'sir etganda yolg'on
+                        mulohaza hosil qilish amali mantiqiy
+                        ko'paytirish amali deb ataladi",B="Mantiqiy ko'paytirish amaliga mos tushish sxemasi mos
+                        keladi",
+                        C="Mantiqiy qo'shish amaliga yig'uvchi sxema mos keladi".
+
+                    </p>
+
+                    <h2 class="header__title">
+                        BC
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Bir sxemaning A kirishiga 011 signallar oqimi,B kirishiga esa 001 signallar oqimi kirdi.Agar
+                        sxemaning ishlashi natijasidsa 101 signallar
+                        oqimi olingan bo'lsa, u holda shu sxemaga mos mantiqiy ifodani aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        not A or B
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Bir sxemaning A kirishiga 001,B kirishiga esa 011 signallar oqimi kirdi.
+                        Agar sxemaning ishlashi natijasidsa 111 signallar oqimi olingan bo'lsa,
+                        u holda shu sxemaga mos mantiqiy ifodani aniqlang
+
+                    </p>
+
+                    <h2 class="header__title">
+                        not A or B
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Bir sxemaning A kirishiga 001,B kirishiga esa 011 signallar oqimi kirdi.
+                        Agar sxemaning ishlashi natijasidsa 101 signallar oqimi olingan bo'lsa,
+                        u holda shu sxemaga mos mantiqiy ifodani aniqlang
+
+                    </p>
+
+                    <h2 class="header__title">
+                        A or not B
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Bir sxemaning A kirishiga 001,B kirishiga esa 011 signallar oqimi kirdi.
+                        Agar sxemaning ishlashi natijasidsa 010 signallar oqimi olingan bo'lsa,
+                        u holda shu sxemaga mos mantiqiy ifodani aniqlang
+
+                    </p>
+
+                    <h2 class="header__title">
+                        not A and B
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Bir sxemaning A kirishiga 001,B kirishiga esa 011 signallar oqimi kirdi.
+                        Agar sxemaning ishlashi natijasidsa 000 signallar oqimi olingan bo'lsa,
+                        u holda shu sxemaga mos mantiqiy ifodani aniqlang
+                    </p>
+
+                    <h2 class="header__title">
+                        not A and B
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=YOLG'ON, B=ROST bo'lsa, u holda quyidagi mantiqiy ifoda aniqlang: (B AND NOT)AND A.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        YOLG'ON
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=ROST, B=YOLG'ON bo'lsa, u holda quyidagi mantiqiy ifoda aniqlang: (B AND NOT)AND A.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        YOLG'ON
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=YOLG'ON, B=ROST bo'lsa, u holda quyidagi mantiqiy ifoda aniqlang: (B AND NOT)OR A.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        YOLG'ON
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=ROST, B=YOLG'ON bo'lsa, u holda quyidagi mantiqiy ifoda aniqlang: (B AND NOT)OR A.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        ROST
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=YOLG'ON, B=ROST bo'lsa, u holda quyidagi mantiqiy ifoda aniqlang: (B OR NOT B)OR A.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        ROST
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Agar A=ROST, B=YOLG'ON bo'lsa,u holda quyidagi mantiqiy ifoda aniqlang: (B ˅ B ) ˄ A.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        ROST
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        (A>B)˄(C˅D)mantiqiy ifoda qiymatini quyidagilarda hisoblang:A=7, B=3*2+1, C=ROST va D=YOLG'ON.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        YOLG'ON
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        (A< B)˄(C˅D)mantiqiy ifoda qiymatini quyidagilarda hisoblang:A=19, B=6*4-5, C=YOLG'ON va D=ROST.
+                            </p>
+
+                            <h2 class="header__title">
+                                YOLG'ON
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        (A = B)˄(C˅D)mantiqiy ifoda qiymatini quyidagilarda hisoblang:A=9, B=3*3+1, C=ROST va D=YOLG'ON.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        YOLG'ON
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        (A = B)˄(C˅D)mantiqiy ifoda qiymatini quyidagilarda hisoblang:A=20, B=4*6-5,C=YOLG'ON va D=ROST.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        YOLG'ON
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        (A > B)˄(C˅D)mantiqiy ifoda qiymatini quyidagilarda hisoblang:A=11, B=15-2*3,C=ROST va
+                        D=YOLG'ON.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        ROST
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Tenglik o'rinli bo'lgan N sonini aniqlang: "N soni juft" ˄ "N soni 3ga bo'linadi"=ROST
+
+                    </p>
+
+                    <h2 class="header__title">
+                        97266
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Tenglik o'rinli bo'lgan N sonini aniqlang: "N soni toq" ˄ "N soni 3ga bo'linadi"=ROST
+
+                    </p>
+
+                    <h2 class="header__title">
+                        93123
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Tenglik o'rinli bo'lgan N sonini aniqlang: "N soni juft" ˅ "N soni 9ga bo'linadi"=ROST
+                    </p>
+
+                    <h2 class="header__title">
+                        3213312
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Tenglik o'rinli bo'lgan N sonini aniqlang: "N soni toq" ˅ "N soni 9ga bo'linadi"=ROST
+                    </p>
+
+                    <h2 class="header__title">
+                        484848
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Quyidagi ifoda natijasi ROST bo'ladigan eng katta butun sonni aniqlang: ɿ(X ≤ 15) ˄ (X < 20)
+                            </p>
+
+                            <h2 class="header__title">
+                                19
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Quyidagi ifoda natijasi ROST bo'ladigan eng kichik butun sonni aniqlang: ɿ(X < 2) ˄ (X < 15)
+                            </p>
+
+                            <h2 class="header__title">
+                                2
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ifoda natijasi ROST bo'ladigan eng kichik butun sonni aniqlang: ɿ(X < 2) ˄ (X-toq son)
+                            </p>
+
+                            <h2 class="header__title">
+                                3
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Quyidagi ifoda natijasi ROST bo'ladigan eng kichik butun sonni aniqlang:ɿ(X< 2)˄(X-juft son)
+                            </p>
+
+                            <h2 class="header__title">
+                                2
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ifoda natijasi ROST bo'ladigan eng katta butun sonni aniqlang: ɿ(X ≥ 15) ˄ (X-toq son)
+
+                    </p>
+
+                    <h2 class="header__title">
+                        13
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ifoda natijasi ROST bo'ladigan eng katta butun sonni aniqlang:
+                        ɿ(X > 44) ˄ ɿ(X sonida bir xil raqamlar qatnashmagan).
+
+                    </p>
+
+                    <h2 class="header__title">
+                        44
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ifoda natijasi ROST bo'ladigan eng kichik butun sonni aniqlang:
+                        ɿ(X ≤ 43) ˄ ɿ(X sonida bir xil raqamlar qatnashmagan).
+
+                    </p>
+
+                    <h2 class="header__title">
+                        44
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        x va y ning konyunksiyasi bo'lgan f(x,y)=x˄y funksiyasiga mos rostlik jadvalini aniqlang:
+
+                    </p>
+
+                    <h2 class="header__title">
+
+                        x 0011 y 0101 x˄y 0001
+
+
+
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        x va y ning dizyunksiyasi bo'lgan f(x,y)=x˅y funksiyasiga mos rostlik jadvalini aniqlang:
+
+                    </p>
+
+                    <h2 class="header__title">
+                        x 0011 y 0101 x˅y 0111
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        x va y ning implikatsiyasi bo'lgan f(x,y) = x → y funksiyasiga mos rostlik jadvalini aniqlang:
+
+                    </p>
+
+                    <h2 class="header__title">
+                        x 0011 y 0101 x → y 1101
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        To'plamlarni tasvirlash usullari to'liqroq ifodalangan javobni aniqlang:
+
+                    </p>
+
+                    <h2 class="header__title">
+                        ro'yxat ko'rinishida, xossasi orqali
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        Ro'yxat ko'rinishida tasvirlangan to'plamni aniqlang
+                    </p>
+
+                    <h2 class="header__title">
+                        A={bobo;dada;ada}
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        Xossasi orqali tasvirlangan to'plamni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        A={x| x=2*k, k € N}
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {x| x € N, -1 < x < 5 } to'plam elementlarini aniqlang. </p>
+
+                            <h2 class="header__title">
+                                1,2,3,4
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {x| 5*x=x-7, x € Z}
+                        to'plam elementlarini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        ᴓ
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {x| 3*x+15=4*(x-8)}
+                        to'plam elementlarini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        47
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {x| 2 * x + 4 = 4}
+                        to'plam elementlarini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        0
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        A = {x| 2 * x + 4 = 4, x € N}
+                        to'plam elementlarini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        ᴓ
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {x| 2 * (x - 5) = 3 * x, x € N}
+                        to'plam elementlarini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        ᴓ
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        A = {x| 2 * (x - 5) = 3 * x}
+                        to'plam elementlarini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        -10
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {x| x = 8 * k, k € N, k < 6} to'plam elementlarini aniqlang. </p>
+
+                            <h2 class="header__title">
+                                8,16,24,32,40
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {x| x = 3 * k, k € N, k < 8} to'plam elementlarini aniqlang. </p>
+
+                            <h2 class="header__title">
+                                3;6;9;12;15;18;21
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        A = {x| x = 3 * k, k € N, x < 8} to'plam elementlarini aniqlang. </p>
+
+                            <h2 class="header__title">
+                                3;6
+                            </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {n | 12 soni 2*n ga bo'linadi, n€N} To'plamni ro'yxat ko'rinishini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        A={1;2;3;6}
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+
+                        A = {1; 2; 3; 4;} va B = {3; 4; 5; 8; 9;} bo'lsa A ᴗ B to'plamni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        {1; 2; 3; 4; 5; 8; 9}
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1; 2; 3; 4;} va B = {3; 4; 5; 8; 9;} bo'lsa A ᴖ B to'plamni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        {3; 4}
+                    </h2>
+
+                </div>
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1; 2; 3; 4;} va B = {3; 4; 5; 8; 9;} bo'lsa A\B to'plamni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        {5; 8; 9}
+                    </h2>
+
+                </div>
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} bo'lsa A ∆ B to'plamni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        {1; 2; 8; 9}
+                    </h2>
+
+                </div>
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} va C={6; 7} bo'lsa A ᴗ (B ᴖ C)
+                        to'plamni aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        {1; 2; 3; 4}
+                    </h2>
+
+                </div>
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} va C={6; 7} bo'lsa A ᴖ (B ᴗ C)
+                        to'plamni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        {3; 4}
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} va C={6; 7} bo'lsa B ᴗ (A ᴗ C)
+                        to'plam elementlari sonini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        9
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} bo'lsa A ᴗ B to'plamning qism to'plamlari sonini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        128
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} bo'lsa B\A to'plamning qism to'plamlari sonini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        8
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} bo'lsa A\B to'plamning qism to'plamlari sonini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        4
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        U = {1; 2; 3; 4; 5; 6; 7; 8; 9;}-universal to'plam, A = {3; 7; 9} bo'lsa, A\{1; 7}
+                        to'plamni to'ldiruvchi to'plamni aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        {1; 2; 3; 4; 5; 6; 7; 8;}
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1,2,3,4,5}, B = {3,5,7}, C = {3} to'plamlar berilgan. To'g'ri tasdiqni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        B ᴖ C < A </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1,2,3,4,5}, B = {3,5,7}, C = {3} to'plamlar berilgan. To'g'ri tasdiqni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        A ᴖ C < B </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1,a,2,b,3,c},B = {1,2,3},C = {a,b,c}.To'g'ri tasdiqni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        A < B v C </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1,a,2,b,3,c},B = {1,2,3},C = {a,b,c}.To'g'ri tasdiqni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        B < A \ C </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1;2;3} va B = {3;4} uchun AxB Dekart ko'paytmani aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        { < 3;3>, < 1;3>, < 2,4>, < 1,4>, < 2,3>, < 3,4>}
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1;2;3} va B = {3;4} uchun BxA Dekart ko'paytmani aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        { < 3;1>, < 3,2>, < 3,3>, < 4,1>, < 4,2>, < 4,3>}
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A = {1;2} va B = {a,b} uchun BxA Dekart ko'paytmani aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        { < b;1>, < a,1>, < a,2>, < b,2>}
+                    </h2>
+
+                </div>
+
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+
+                        P={< a;a>; < b;a> } < A² munosabatni qo'shmalik matritsadagi sonlar yig'indisini aniqlang. </p>
+
+                                    <h2 class="header__title">
+                                        2
+                                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+
+                        P={< a;a>; < b;a> } < A² munosabatni qo'shmalik matritsasi diagonalidagi sonlar yig'indisini
+                                    aniqlang. </p>
+
+                                    <h2 class="header__title">
+                                        1
+                                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        P = { < 1,1>, < 1,2>, < 2,1>, < 2,2>, < 3,1>, { < 3,2>, < 4,1>, < 4,2> } < A² munosabatni
+                                                            qo'shmalik matritsasidagi sonlar yig'indisini aniqlang. </p>
+
+                                                            <h2 class="header__title">
+                                                                8
+                                                            </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1,2,3} va B={a,b,c} bo'lsa P={< 1;a>; 1;c>;< 2;b>;< 3;a> }< AxB munosabatning qo'shmalik
+                                        matritsasidagi sonlar yig'indisini aniqlang. </p>
+
+                                        <h2 class="header__title">
+                                            4
+                                        </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+
+                        A={1,2,3} va B={a,b,c} bo'lsa P={< 1;a>; 1;c>;< 2;b>;< 3;a> }< AxB munosabatning qo'shmalik
+                                        matritsasidagi 0 raqamlari sonini aniqlang. </p>
+
+                                        <h2 class="header__title">
+                                            5
+                                        </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1,2,3} va B={x,y} bo'lsa Q={< a;x>;< b;y>;< c;x>}< AxB munosabatning qo'shmalik
+                                        matritsasidagi sonlar yig'indisini aniqlang. </p>
+
+                                        <h2 class="header__title">
+                                            3
+                                        </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+
+                        A={1,2,3} va B={x,y} bo'lsa Q={< a;x>;< b;y>;< c;x>}< AxB munosabatning qo'shmalik
+                                        matritsasidagi 0 raqamlari sonini aniqlang. </p>
+
+                                        <h2 class="header__title">
+                                            3
+                                        </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={5;7;9} B={4;6} va P={< 5;4>;< 7;4>;< 7;6>;< 9;4>;< 9;6> }
+                                            munosabatning qo'shmalik
+                                            matritsasidagi 0 raqamlari sonini aniqlang.
+                    </p>
+
+                    <h2 class="header__title">
+                        1
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={5;7;9} B={4;6} va P={< 5;4>;< 7;4>;< 7;6>;< 9;4>;< 9;6> }
+                                            munosabatning qo'shmalik
+                                            matritsasidagi sonlar yig'indisini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        5
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1,2,3} to'plam berilgan. P={< a;b>| a< b; a,b € A}< A² munosabatning qo'shmalik
+                                matritsasidagi sonlar yig'indisini aniqlang. </p>
+
+                                <h2 class="header__title">
+                                    3
+                                </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1,2,3} to'plam berilgan. P={< a;b>| a< b; a,b € A}< A² munosabatning qo'shmalik
+                                matritsasidagi 0 raqamlari sonini aniqlang. </p>
+
+                                <h2 class="header__title">
+                                    6
+                                </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1,2,3} to'plam berilgan. P={< a;b>| a ≤ b; a,b € A}< A² munosabatning qo'shmalik
+                                matritsasidagi 1 raqamlari sonini aniqlang. </p>
+
+                                <h2 class="header__title">
+                                    6
+                                </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={a,b,c,d} to'plam berilgan. P={< x;y>| x=y; x,y € A}< A² munosabatning qo'shmalik matritsasi
+                                satr va ustunlari sonini yig'indisini aniqlang. </p>
+
+                                <h2 class="header__title">
+                                    8
+                                </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1,2,3} to'plam va P={ < 1;1>, < 1,2>, < 1,3>, < 2,3>, < 3,1>}< A² munosabatning qo'shmalik
+                                                matritsasi diagonalidagi sonlar yig'indisini aniqlang </p>
+
+                                                <h2 class="header__title">
+                                                    1
+                                                </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1;2;3;4;5;6} to'plamdagi x≤y binar munosabatning qism to'plami to'g'ri berilgan javobni
+                        aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        {< 1;1>, < 1,2>, < 3,6>}
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+
+                        Quyidagi ta'rifni to'ldiruvchi jumlani aniqlang:
+                        A to'plamdagi P binar munosabat tranzitivlik xossasiga ega, agar....
+                    </p>
+
+                    <h2 class="header__title">
+                        xPy va yPz bo'lgan ixtiyoriy x,y,z € A uchun xPz o'rinli bo'lsa
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ta'rifni to'ldiruvchi jumlani aniqlang:
+                        A to'plamdagi P binar munosabat refleksivlik xossasiga ega, agar....
+
+                    </p>
+
+                    <h2 class="header__title">
+                        xPx ixtiyoriy x € A uchun o'rinli bo'lsa
+                    </h2>
+
+                </div>
+
+                <div class="box1">
+                    <p class="header__text">
+
+
+                        P={< a;a>; < b;a> } < A² munosabatni qo'shmalik matritsadagi 1 raqamlari sonini aniqlang. </p>
+
+                                    <h2 class="header__title">
+                                        2
+                                    </h2>
+
+                </div>
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} va C={3; 4; 6; 7} bo'lsa B ᴖ (A ᴗ C)
+                        to'plam elementlari sonini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        2
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        Ixtiyoriy A va B to'plamlar uchun qaysi tenglik o'rinli:
+                        1)AᴗB=BᴗA; 2)A\B=B\A; 3)AᴖB=BᴖA; 4)A∆B=B∆A
+
+                    </p>
+
+                    <h2 class="header__title">
+                        1;3;4
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        A={1; 2; 3; 4;} va B={3; 4; 5; 8; 9;} bo'lsa AᴖB to'plamning qism to'plamlar
+                        sonini aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        4
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        U={A;L;F;R;A;G;A;N;U;S}-universal to'plam, A={S;A;F} bo'lsa, A\{G;U} to'plamni
+                        to'ldiruvchi to'plamni aniqlang.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        {L;R;G;N;U}
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ta'rifni to'ldiruvchi jumlani aniqlang:
+                        A to'plamdagi P binar munosabat antirefleksivlik xossasiga ega, agar....
+
+                    </p>
+
+                    <h2 class="header__title">
+                        < x,y> E/P ixtiyoriy xEA uchun o'rinli bo'lsa
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+
+                        Quyidagi ta'rifni to'ldiruvchi jumlani aniqlang:
+                        A to'plamdagi P binar munosabat simmetriklik xossasiga ega, agar....
+                    </p>
+
+                    <h2 class="header__title">
+                        xPy dan ixtiyoriy x,yEA uchun yPx kelib chiqsa
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ta'rifni to'ldiruvchi jumlani aniqlang:
+                        A to'plamdagi P binar munosabat ekvivalentlik xossasiga ega, agar....
+
+                    </p>
+
+                    <h2 class="header__title">
+                        refleksivlik, simmetriklik va tranzitivlik xossasiga ega bo'lsa
+                    </h2>
+
+                </div>
+
+
+
+                <div class="box1">
+                    <p class="header__text">
+                        Quyidagi ta'rifni to'ldiruvchi jumlani aniqlang:
+                        A to'plamdagi binar munosabat refleksiv bo'lishi uchun u barcha ... bo'lishi zarur va yetarli.
+
+                    </p>
+
+                    <h2 class="header__title">
+                        idA to'plamning barcha juftligini o'z ichiga olganda
+                    </h2>
+
+                </div>
+
+                <div class="box1">
+                    <img src="img/photo1.jpg" alt="" class="header__img">
+
+                </div>
+
+
+
+                <div class="box1">
+                    <img src="img/photo2.jpg" alt="" class="header__img">
+
+                </div>
+
+
+                <div class="box1">
+                    <img src="img/photo3.jpg" alt="" class="header__img">
+
+                </div>
+        </div>
+        </div>
+    </header>
+</body>
+
+</html>
